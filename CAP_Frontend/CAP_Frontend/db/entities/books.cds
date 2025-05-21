@@ -18,6 +18,7 @@ entity Books : cuid, managed {
     rating       : bs.rating;
     review       : Association to many bs.Reviews;
     isReviewable : bs.Tech_Boolean not null default true;
+    status       : Association to bs.status @readonly;
 }
 
 // input validation
