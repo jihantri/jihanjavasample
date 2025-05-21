@@ -1,6 +1,7 @@
 using from '../../srv/books-service';
 
 annotate BookService.Books with {
+    //for display dropdown
     status @Common.ValueListWithFixedValues;
     //start
     isbn   @(
